@@ -16,7 +16,7 @@ const DynamicScroll = dynamic(() => import("../components/ui/ScrollButton"), {
 //   ssr: false,
 // });
 
-const page = ({ children }: { children: React.ReactNode }) => {
+const Page = () => {
   return (
     <div className="overflow-clip bg-black-100">
       <Hero />
@@ -43,4 +43,4 @@ const page = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default page;
+export default Page;
