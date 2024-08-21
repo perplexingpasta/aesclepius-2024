@@ -1,5 +1,5 @@
-// import { SpeedInsights } from "@vercel/speed-insights/next";
-// import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Montserrat, Lexend_Deca } from "next/font/google";
 import "./globals.css";
@@ -16,8 +16,7 @@ const lexenddeca = Lexend_Deca({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Asclepius 2024 | 7th International UG Medical Conference",
+  title: "Asclepius 2024 | 7th International UG Medical Conference",
   description:
     "We help dermatologists with consistent, predictable & loyal patient acquisition. We get dermatologists more patients and help them grow their practice online by running paid ads on facebook and google and professional website development using nextjs. We also help set up their google business profile and increase google reviews on google maps of their clinic.",
   other: {
@@ -48,12 +47,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         > */}
-          {children}
-          {/* <Analytics />
-          <SpeedInsights /> */}
+        {children}
+        <Analytics />
+        <SpeedInsights />
         {/* </CombinedProvider> */}
       </body>
     </html>
   );
 }
-
