@@ -1,0 +1,311 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply !scroll-smooth border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  button {
+    @apply active:outline-none;
+  }
+}
+
+@layer utilities {
+  .heading {
+    @apply text-center text-4xl font-extrabold tracking-wider uppercase md:text-5xl;
+  }
+}
+
+/* FOR WHATSAPP INTEGRATION */
+/* for desktop */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .whatsapp-icon {
+    margin-top: 10px;
+  }
+
+  .whatsapp_float {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
+  }
+}
+
+/* MY OWN CLASSES */
+/* THIS CONTROLS TEXT HIGHLIGHTING */
+::selection {
+  @apply bg-black-100 dark:bg-indigo-500 text-white;
+}
+
+.gradient-text {
+  /* background: linear-gradient(
+    to right,
+    #a855f7,
+    #ec4899,
+    #eab308,
+    #ec4899,
+    #a855f7,
+    #ec4899,
+    #eab308
+  ); */
+  
+  /* background: linear-gradient(
+    to right,
+    #6366f1,
+    #a5b4fc,
+    #CBACF9,
+    #a5b4fc,
+    #6366f1,
+    #a5b4fc,
+    #CBACF9
+  ); */
+
+  background: linear-gradient(
+    to right,
+    #4338ca,
+    #6366f1,
+    #8b5cf6,
+    #6366f1,
+    #4338ca,
+    #6366f1
+    );
+    background-size: 500% 500%;
+  background-clip: text;
+}
+
+/* FROM NIKE */
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .input {
+    @apply border pl-5 text-base leading-normal text-slate-gray outline-none max-sm:w-full max-sm:rounded-full max-sm:border-slate-gray max-sm:p-5 sm:flex-1 sm:border-none;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply px-8 py-12 sm:px-16 sm:py-24;
+  }
+
+  .padding-x {
+    @apply px-8 sm:px-16;
+  }
+
+  .padding-y {
+    @apply py-12 sm:py-24;
+  }
+
+  .padding-l {
+    @apply pl-8 sm:pl-16;
+  }
+
+  .padding-r {
+    @apply pr-8 sm:pr-16;
+  }
+
+  .padding-t {
+    @apply pt-12 sm:pt-24;
+  }
+
+  .padding-b {
+    @apply pb-12 sm:pb-24;
+  }
+
+  /* .info-text {
+    @apply font-montserrat text-lg leading-7 text-slate-gray;
+  } */
+}
+
+/* FOR 404 PAGE NOT FOUND */
+#error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#error .content {
+  max-width: 70rem;
+  text-align: center;
+}
+
+.content h1.header {
+  /* font-size: 12vw; */
+  line-height: 1em;
+  animation: animate 10s ease-in-out infinite;
+  background-image: -webkit-repeating-linear-gradient(
+    -60deg,
+    /* #71b7e6,
+    #b98acc,
+    #ee8176,
+    #b98acc,
+    #9b59b6 */ #a0e9fd,
+    /* Light Blue */ #a8e6cf,
+    /* Light Green */ #ffb3ba,
+    /* Light Pink */ #d4a5a5,
+    /* Light Purple */ #ffffba /* Light Yellow */
+  );
+  background-size: 500%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+  position: relative;
+  -webkit-animation: animate 10s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.content #pagenotfound {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  /* font-size: 2rem; */
+}
+
+.content .btns {
+  /* margin: 25px 0; */
+  display: inline-flex;
+  justify-content: center;
+}
+.content .btns a {
+  margin: 0 10px;
+  font-weight: 500;
+  padding: 10px 25px;
+  text-transform: uppercase;
+}
+/* .content .btns a:hover {
+  background: var(--btn-color);
+  color: coral
+} */
+
+
+/* FONTS CSS */
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit-Variable.ttf") format("truetype");
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lexend";
+  src: url("/fonts/Lexend-Variable.ttf") format("truetype");
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LexendDeca";
+  src: url("/fonts/LexendDeca-Variable.ttf") format("truetype");
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
+}
+

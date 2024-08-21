@@ -1,0 +1,1 @@
+add spotlights in hero if bg is sufficiently dark
