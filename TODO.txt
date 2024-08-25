@@ -1,1 +1,14 @@
 add spotlights in hero if bg is sufficiently dark
+add gsap everywhere
+use aceternity gradient bg
+use svg logo
+add nifty animation in hero section around the title
+add logo in favicon
+og link meta tags
+
+SECTIONS:
+hero
+events
+contact section 
+social links and cta button
+footer

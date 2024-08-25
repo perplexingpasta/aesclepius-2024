@@ -14,11 +14,11 @@ export default function Home() {
     <>
       <main>
         <section className="mt-40">
-          <DynamicServices />
+          {/* <DynamicServices /> */}
         </section>
-        <section className="relative mb-16 mt-12 border-b-2 border-t-2 md:mb-20 md:mt-40 md:rounded-3xl md:border-2 md:border-black-100">
+        {/* <section className="relative mb-16 mt-12 border-b-2 border-t-2 md:mb-20 md:mt-40 md:rounded-3xl md:border-2 md:border-black-100">
           <DynamicSubscribe />
-        </section>
+        </section> */}
       </main>
     </>
   );

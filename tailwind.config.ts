@@ -185,6 +185,13 @@ const config = {
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         gradient: "gradient 3s linear infinite",
       },
+      backgroundImage: {
+        "footer-grid": "url('/images/footer-grid.svg')",
+      },
+      // cursor: {
+      //   'custom': 'url(/cursors/cursor-white.svg), auto',
+      //   'pointer': 'url(/cursors/pointer-white.svg), pointer',
+      // },
     },
   },
   plugins: [
