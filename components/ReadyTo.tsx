@@ -7,7 +7,7 @@ import LitUpButtonBg from "./ui/LitUpButtonBg";
 const ReadyTo = () => {
   return (
     <div className="mb-32 md:mb-16 flex flex-col items-center" id="readyto">
-      <h1 className="text-center text-4xl font-bold tracking-wider text-white md:text-5xl lg:max-w-[45vw]">
+      <h1 className="text-center text-4xl font-light tracking-wider text-white md:text-5xl lg:max-w-[45vw]">
         Ready to learn, engage & ascend?
       </h1>
       <p className="my-5 text-center text-white-200 md:mb-10">

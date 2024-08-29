@@ -214,31 +214,31 @@ export const core = [
   {
     id: 1,
     img: "https://avatar.iran.liara.run/public/boy?username=Travis",
-    name: "Travis Scott",
+    name: "Person",
     number: "75634-57294",
   },
   {
     id: 2,
     img: "https://avatar.iran.liara.run/public/boy?username=John",
-    name: "Dominique Jones",
+    name: "Person",
     number: "86544-33332",
   },
   {
     id: 3,
     img: "https://avatar.iran.liara.run/public/girl?username=Evelyn",
-    name: "Isabel LaRosa",
+    name: "Person",
     number: "85442-55225",
   },
   {
     id: 4,
     img: "https://avatar.iran.liara.run/public/boy?username=Blake",
-    name: "YNW Melly",
+    name: "Person",
     number: "74532-86533",
   },
   {
     id: 5,
     img: "https://avatar.iran.liara.run/public/girl?username=Ziekel",
-    name: "Lolo Zouai",
+    name: "Person",
     number: "95332-43565",
   },
 ];

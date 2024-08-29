@@ -8,6 +8,7 @@ import Hero from "@/components/Hero2";
 import { GoogleGemini } from "@/components/GoogleGemini";
 import Contact from "@/components/Contact";
 import ReadyTo from "@/components/ReadyTo";
+import FlipCardSection from "@/components/FlipCardSection";
 
 const DynamicFooter = dynamic(() => import("@/components/Footer3"), {
   ssr: false,
@@ -37,6 +38,7 @@ const page = () => {
           {/* <GridAndDotBg /> */}
           <Home />
           <ReadyTo />
+          <FlipCardSection />
           <section className="block md:hidden">
             <Contact />
           </section>

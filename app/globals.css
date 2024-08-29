@@ -309,3 +309,6 @@
   font-style: normal;
 }
 
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
