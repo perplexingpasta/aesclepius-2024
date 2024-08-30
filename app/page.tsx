@@ -7,13 +7,20 @@ import Home from "@/components/Home";
 import Hero from "@/components/Hero2";
 import { GoogleGemini } from "@/components/GoogleGemini";
 import Contact from "@/components/Contact";
-import ReadyTo from "@/components/ReadyTo";
-import FlipCardSection from "@/components/FlipCardSection";
 
 const DynamicFooter = dynamic(() => import("@/components/Footer3"), {
   ssr: false,
 });
 const DynamicScroll = dynamic(() => import("../components/ui/ScrollButton"), {
+  ssr: false,
+});
+const DynamicFlipCardSection = dynamic(
+  () => import("../components/FlipCardSection"),
+  {
+    ssr: false,
+  },
+);
+const DynamicReadyTo = dynamic(() => import("../components/ReadyTo"), {
   ssr: false,
 });
 // const DynamicWhatsapp = dynamic(() => import("@/components/Whatsapp"), {
@@ -37,8 +44,8 @@ const page = () => {
         <div className="w-full max-w-7xl">
           {/* <GridAndDotBg /> */}
           <Home />
-          <ReadyTo />
-          <FlipCardSection />
+          <DynamicReadyTo />
+          <DynamicFlipCardSection />
           <section className="block md:hidden">
             <Contact />
           </section>

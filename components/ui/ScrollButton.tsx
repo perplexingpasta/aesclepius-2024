@@ -4,7 +4,7 @@ import Link from "next/link";
 const ScrollButton = () => {
   return (
     <div className="mt-16 flex w-full items-center justify-center">
-      <Link href="#footer">
+      <Link href="#events">
         <div className="flex h-12 w-6 items-start justify-center rounded-3xl border-2 border-white-100 md:h-16 md:w-9 md:border-4 md:p-2">
           <motion.div
             animate={{

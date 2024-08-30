@@ -243,6 +243,57 @@ export const core = [
   },
 ];
 
+export const events = [
+  {
+    id: 1,
+    image: "/images/graphic.webp",
+    title: "Workshops",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, debitis cupiditate. Quisquam rem consequatur earum.",
+  },
+  {
+    id: 2,
+    image: "/images/graphic.webp",
+    title: "Symposium",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, debitis cupiditate. Quisquam rem consequatur earum.",
+  },
+  {
+    id: 3,
+    image: "/images/graphic.webp",
+    title: "Quiz",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, debitis cupiditate. Quisquam rem consequatur earum.",
+  },
+  {
+    id: 4,
+    image: "/images/graphic.webp",
+    title: "Scientific events",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, debitis cupiditate. Quisquam rem consequatur earum.",
+  },
+  {
+    id: 5,
+    image: "/images/graphic.webp",
+    title: "Literary events",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, debitis cupiditate. Quisquam rem consequatur earum.",
+  },
+  {
+    id: 6,
+    image: "/images/graphic.webp",
+    title: "Panel discussions",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, debitis cupiditate. Quisquam rem consequatur earum.",
+  },
+  {
+    id: 7,
+    image: "/images/graphic.webp",
+    title: "MUN",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, debitis cupiditate. Quisquam rem consequatur earum.",
+  },
+  {
+    id: 8,
+    image: "/images/graphic.webp",
+    title: "Online events",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, debitis cupiditate. Quisquam rem consequatur earum.",
+  },
+];
+
 export const socialMedia = [
   {
     id: 1,

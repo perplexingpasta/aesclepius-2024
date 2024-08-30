@@ -1,10 +1,7 @@
-// CHANGES FROM HERE ON
-
 /* eslint-disable @next/next/no-img-element */
 // components/FlipCard.tsx
 import React, { useState, useEffect, useRef } from "react";
 import { useSpring, animated } from "@react-spring/web";
-import { useInView } from "react-intersection-observer";
 
 interface FlipCardProps {
   image: string;
@@ -35,10 +32,19 @@ const FlipCardSpring: React.FC<FlipCardProps> = ({
       const viewportHeight =
         window.innerHeight || document.documentElement.clientHeight;
 
-      // Check if the element has reached 20% from the top of the viewport
+      // Flip the card when it is 30% from the top of the viewport
       if (rect.top <= viewportHeight * 0.3) {
         setFlipped(true);
-      } else {
+      }
+
+      // Define threshold for flipping back (e.g., 20% out of the viewport)
+      const flipBackThreshold = viewportHeight * 0.3;
+
+      // Flip back to front when the card leaves the viewport with threshold
+      if (
+        rect.bottom < flipBackThreshold ||
+        rect.top > viewportHeight - 2 * flipBackThreshold
+      ) {
         setFlipped(false);
       }
     };
@@ -53,14 +59,13 @@ const FlipCardSpring: React.FC<FlipCardProps> = ({
   }, []);
 
   return (
-    <div ref={cardRef} className="perspective-1000 relative h-96 w-80">
+    <div ref={cardRef} className="perspective-1000 relative mb-10 h-96 w-80">
       {/* Front Side */}
       <animated.div
         className="backface-hidden absolute h-full w-full"
         style={{
           transform,
           opacity: opacity.to((o) => 1 - o),
-          // position: "absolute",
         }}
       >
         <img src={image} alt={title} className="h-full w-full object-cover" />
@@ -71,7 +76,7 @@ const FlipCardSpring: React.FC<FlipCardProps> = ({
 
       {/* Back Side */}
       <animated.div
-        className="backface-hidden rotate-y-180 absolute flex h-full w-full items-center justify-center bg-blue-500 p-4 text-white"
+        className="backface-hidden rotate-y-180 absolute flex h-full w-full items-center justify-center bg-violet-500 p-4 text-white"
         style={{
           transform,
           opacity,
