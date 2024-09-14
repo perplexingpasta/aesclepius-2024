@@ -3,10 +3,17 @@ add gsap everywhere
 use aceternity gradient bg
 use svg logo 
 add nifty animation in hero section around the title
-add logo in favicon
 og link meta tags
 wine gradient for background
+make all images webp
 
+add video
+add smooth scroll, lenis bg, lenis cursor, horizontal scroll events
+bg stars for background from hii :D aceternity component
+replace organizing committee img component w next's Image once you use local images
+performance
+
+add logo in favicon ✅
 flipcards for phone ✅
 
 SECTIONS:

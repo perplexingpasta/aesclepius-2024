@@ -213,84 +213,124 @@ export const workExperience = [
 export const core = [
   {
     id: 1,
-    img: "https://avatar.iran.liara.run/public/boy?username=Travis",
-    name: "Person",
-    number: "75634-57294",
+    img: "/images/core/img1.png",
+    name: "Aviral Harsh",
+    desig: "Organising Secretary",
+    number: "9035005246",
   },
   {
     id: 2,
-    img: "https://avatar.iran.liara.run/public/boy?username=John",
-    name: "Person",
-    number: "86544-33332",
+    img: "/images/core/img2.png",
+    name: "Sanchi Kapoor",
+    desig: "Organising Secretary",
+    number: "9358241052",
   },
   {
     id: 3,
-    img: "https://avatar.iran.liara.run/public/girl?username=Evelyn",
-    name: "Person",
-    number: "85442-55225",
+    img: "/images/core/img3.png",
+    name: "Pranshu Chhabra",
+    desig: "Treasurer",
+    number: "9599922317",
   },
   {
     id: 4,
-    img: "https://avatar.iran.liara.run/public/boy?username=Blake",
-    name: "Person",
-    number: "74532-86533",
+    img: "/images/core/img4.png",
+    name: "Vishnupriya Gopinath",
+    desig: "Joint Secretary",
+    number: "9632388401",
   },
   {
     id: 5,
-    img: "https://avatar.iran.liara.run/public/girl?username=Ziekel",
-    name: "Person",
-    number: "95332-43565",
+    img: "/images/core/img6.png",
+    name: "Param Sheth",
+    desig: "Secretary General - MUN",
+    number: "9108360914",
+  },
+  {
+    id: 6,
+    img: "/images/core/img5.png",
+    name: "Nidhish Agarwal",
+    desig: "Joint Secretary",
+    number: "7007944575",
   },
 ];
 
 export const events = [
   {
     id: 1,
-    image: "/images/graphic.webp",
+    image: "/images/events/workshop.png",
     title: "Workshops",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, debitis cupiditate. Quisquam rem consequatur earum.",
+    backgroundColor: "#501865",
+    description: `WORKSHOPS <br /><br />1. Suturing 101 - Knot your average workshop <br />
+    2. POCUS (Point of Care Ultrasound) <br />
+    3. USG Guided Nerve Block Workshop <br />
+    4. Case Chronicles - A case report writing bootcamp <br />
+    5. Vital flow - Nephrology workshop <br />
+    6. Crime Scene Investigation Workshop <br />
+    7. The Olympian’s Aid - From Orthopaedic Injury Management to Peak Performance <br />`,
   },
   {
     id: 2,
-    image: "/images/graphic.webp",
+    image: "/images/events/symposium.png",
     title: "Symposium",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, debitis cupiditate. Quisquam rem consequatur earum.",
+    backgroundColor: "#733848",
+    description: `SYMPOSIUM CEREBRI - THE NEUROLOGY SYMPOSIUM <br /><br />
+    Join the leading experts at the Neurology Symposium organized in partnership with the Neurology Department at JSS Hospital. <br /><br /> Dive into the abyss and curves of STROKE and it's DIFFERENTIALS, and gain valuable insights on the diagnosis, treatment and management in the most interactive ways possible which is surely going to help at all the levels of your MBBS journey and beyond.`,
   },
   {
     id: 3,
-    image: "/images/graphic.webp",
+    image: "/images/events/quiz.png",
     title: "Quiz",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, debitis cupiditate. Quisquam rem consequatur earum.",
+    backgroundColor: "#A63C63",
+    description: `OCCAM&apos;S RAZOR - THE QUIZ <br /><br />
+    1. Pre & Para clinical Quiz - Showcase your expertise in Phase 1 and Phase 2 undergraduate subjects. <br /><br />
+    2.  Clinical Quiz - This quiz is the perfect opportunity to show off your knowledge gained in Phase 3 part 1 & part 2 undergraduate subjects.<br /><br />
+    3. General Quiz - This quiz aims to provide an exciting experience for participants. The questions featured will be about well known medical dramas and trending topics in the medical field.`,
   },
   {
     id: 4,
-    image: "/images/graphic.webp",
+    image: "/images/events/science.png",
     title: "Scientific events",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, debitis cupiditate. Quisquam rem consequatur earum.",
+    backgroundColor: "#5E0A5C",
+    description: `SCIENTIFIC EVENTS <br /><br />1. Case Presentation - Provides you an opportunity to present  intriguing cases.<br />
+    2. Poster Presentation - Showcase your unique research findings through a poster.<br />
+    3. Medisleuth - Dive into this exciting adventure inside the world of forensic medicine.<br />
+    4. Medical Shark Tank -  Ready to revolutionize the medical field with your groundbreaking ideas?<br />
+    5.  Oral Paper Presentation -  Provides a platform to present unique cases.`,
   },
   {
     id: 5,
-    image: "/images/graphic.webp",
+    image: "/images/events/literary.png",
     title: "Literary events",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, debitis cupiditate. Quisquam rem consequatur earum.",
+    backgroundColor: "#732002",
+    description: `LITERARY EVENTS <br /><br /> 1. Medical Pictionary - A unique game of Pictionary where it's necessary to combine your artistic skills, creativity, presence of mind and teamwork.<br />
+    2. Panacea Under a Minute - Diagnosis in 60 seconds.<br />
+    3. Dialogus Medicus - Medical debate.<br />
+    4. Fever Olympics - Fefor, Febris, Fever, is it just a simple symptom or something much more? Key features of this workshop include symptom analysis, age-specific symptomatology, and symptom identification, with a focus on positive and negative symptoms.`,
   },
   {
     id: 6,
-    image: "/images/graphic.webp",
+    image: "/images/events/panels.png",
     title: "Panel discussions",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, debitis cupiditate. Quisquam rem consequatur earum.",
+    backgroundColor: "#51101C",
+    description: `PANELS <br /><br /> 1. Financial Literacy - A program equipping medical students with the skills to make informed investment decisions and manage risks in healthcare, focusing on medical technology, biotechnology, and pharmaceuticals. <br /><br />
+    2. Prospectus Medicus - Our renowned panel of experts will explore alternative career routes, help you navigate the details of different exams, and offer crucial guidance for achieving a successful career.`,
   },
   {
     id: 7,
-    image: "/images/graphic.webp",
+    image: "/images/events/mun2.png",
     title: "MUN",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, debitis cupiditate. Quisquam rem consequatur earum.",
+    backgroundColor: "#3D1E65",
+    description:
+      "MUN <br /><br />JSSMCMUN is back, once again offering a platform for engaging, productive discussions on global issues and the creation of actionable policies aimed at the betterment of humanity.  <br /><br />This event presents a unique opportunity for delegates from diverse backgrounds to come together, fostering the development of invaluable skills and a deep understanding of governance and policy-making.",
   },
   {
     id: 8,
-    image: "/images/graphic.webp",
+    image: "/images/events/online.png",
     title: "Online events",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, debitis cupiditate. Quisquam rem consequatur earum.",
+    backgroundColor: "#001175",
+    description:
+      "ONLINE EVENTS <br /><br /> 1. Poetic pulse - The poetry competition <br /><br />2. Palette Pandemonium - The art competition <br /><br />3. Pixel Perception -The Photography competition",
   },
 ];
 
@@ -299,24 +339,32 @@ export const socialMedia = [
     id: 1,
     width: 20,
     height: 20,
-    alt: "facebook page link",
+    alt: "asclepius's facebook page link",
     img: "/images/facebook.svg",
-    link: "https://www.facebook.com/people/Celeste-Consulting/61561819893146/",
+    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
   },
   {
     id: 2,
     width: 20,
     height: 20,
-    alt: "linkedin business page link",
-    img: "/images/link.svg",
-    link: "https://www.linkedin.com/company/celeste-consulting/",
+    alt: "asclepius's instagram page link",
+    img: "/images/insta.svg",
+    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
   },
   {
     id: 3,
     width: 20,
     height: 20,
-    alt: "twitter page link",
+    alt: "asclepius's linkedin page link",
+    img: "/images/link.svg",
+    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  },
+  {
+    id: 4,
+    width: 20,
+    height: 20,
+    alt: "asclepius's twitter page link",
     img: "/images/twit.svg",
-    link: "https://x.com/rishabhj911/",
+    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
   },
 ];

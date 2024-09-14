@@ -32,11 +32,16 @@ const Footer = () => {
 
           {/* <br className="block md:hidden" />
         <br className="block md:hidden" /> */}
-          <div className="hidden md:flex ml-5 mt-10 mb-4 md:mb-0 flex-col justify-between gap-2 md:ml-20 md:mt-0 md:gap-4">
-            <h1 className="text-xl md:text-2xl">Core Committee</h1>
-            {core.map(({ id, img, name, number }) => (
+          <div className="hidden flex-col justify-between md:mb-0 md:ml-20 md:mt-0 md:flex">
+            <h1 className="mb-2 text-xl md:text-2xl">Organising Committee</h1>
+            {core.map(({ id, img, name, desig, number }) => (
               <div key={id}>
-                <ContactCard imageSrc={img} name={name} number={number} />
+                <ContactCard
+                  imageSrc={img}
+                  name={name}
+                  designation={desig}
+                  number={number}
+                />
               </div>
             ))}
           </div>

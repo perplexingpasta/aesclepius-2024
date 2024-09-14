@@ -2,7 +2,6 @@ import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Montserrat, Lexend_Deca } from "next/font/google";
 import "./globals.css";
-// import { CombinedProvider } from "./provider";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -40,15 +39,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        {/* <CombinedProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        > */}
         {children}
         <Analytics />
-        {/* </CombinedProvider> */}
       </body>
     </html>
   );

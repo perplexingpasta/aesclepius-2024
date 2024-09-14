@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLocationArrow } from "react-icons/fa6";
+import { IoIosDocument } from "react-icons/io";
 import LitUpButton from "./ui/LitUpButton";
 import Link from "next/link";
 import LitUpButtonBg from "./ui/LitUpButtonBg";
@@ -24,16 +25,17 @@ const ReadyTo = () => {
             position="right"
           />
         </Link>
-        <Link
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        <a
+          href="/images/elden.png" // Path to the PDF file in the public directory
+          download="EldenRing.png" // The name of the file when downloaded
           target="_blank"
         >
           <LitUpButton
             title="View Brochure"
-            icon={<FaLocationArrow />}
+            icon={<IoIosDocument />}
             position="right"
           />
-        </Link>
+        </a>
       </div>
     </div>
   );

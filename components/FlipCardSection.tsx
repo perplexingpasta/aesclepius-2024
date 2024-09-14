@@ -8,12 +8,14 @@ const FlipCardSection = () => {
       <h1 className="mb-8 text-center text-4xl font-light tracking-wider text-white">
         Events
       </h1>
-      {events.map(({ id, image, title, description }) => (
+      {events.map(({ id, image, title, backgroundColor, description }) => (
         <div key={id} className="grid justify-items-center">
           <FlipCardSpring
             image={image}
             title={title}
-            description={description}
+            backgroundColor={backgroundColor}
+            // description={description}
+            description={<div dangerouslySetInnerHTML={{ __html: description }} />}
           />
         </div>
       ))}

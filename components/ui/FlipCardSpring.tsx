@@ -6,12 +6,14 @@ import { useSpring, animated } from "@react-spring/web";
 interface FlipCardProps {
   image: string;
   title: string;
-  description: string;
+  backgroundColor: any;
+  description: any;
 }
 
 const FlipCardSpring: React.FC<FlipCardProps> = ({
   image,
   title,
+  backgroundColor,
   description,
 }) => {
   const [flipped, setFlipped] = useState(false);
@@ -68,7 +70,14 @@ const FlipCardSpring: React.FC<FlipCardProps> = ({
           opacity: opacity.to((o) => 1 - o),
         }}
       >
-        <img src={image} alt={title} className="h-full w-full object-cover" />
+        <img
+          src={image}
+          alt={title}
+          className="h-full w-full rounded-3xl object-cover"
+        />
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60" />
+
         <h3 className="absolute bottom-4 left-4 text-xl font-bold text-white">
           {title}
         </h3>
@@ -76,13 +85,16 @@ const FlipCardSpring: React.FC<FlipCardProps> = ({
 
       {/* Back Side */}
       <animated.div
-        className="backface-hidden rotate-y-180 absolute flex h-full w-full items-center justify-center bg-violet-500 p-4 text-white"
+        className="backface-hidden rotate-y-180 absolute flex h-full w-full items-center justify-center rounded-3xl p-4 text-white"
         style={{
           transform,
           opacity,
+          backgroundColor,
         }}
       >
-        <p className="rotate-y-180">{description}</p>
+        <p className="rotate-y-180 font-lexendDeca text-[0.9rem]">
+          {description}
+        </p>
       </animated.div>
     </div>
   );
