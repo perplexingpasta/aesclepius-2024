@@ -6,7 +6,7 @@ import ContactCard from "./ui/ContactCardFooter";
 const Footer = () => {
   return (
     <div className="relative mx-auto mt-20 flex max-w-[85rem] flex-col items-center justify-center overflow-clip px-5 pt-10 text-white sm:px-10 lg:pt-20">
-      <div className="relative w-full pb-10 font-lexendDeca" id="footer">
+      <div className="relative w-full pb-10" id="footer">
         <div className="relative flex flex-col justify-around lg:flex-1 lg:flex-row">
           <div className="absolute -top-6 h-[10rem] w-[10rem] opacity-40 md:-top-72 md:h-[22rem] md:w-[22rem] lg:-top-12 lg:left-32 lg:h-[22rem] lg:w-[22rem]">
             <Image
@@ -49,7 +49,7 @@ const Footer = () => {
 
         <div className="mt-4 border-b border-gray-800 md:mt-12" />
 
-        <div className="relative z-50 mt-4 flex flex-col items-center justify-between md:flex-row">
+        <div className="relative z-50 mt-4 flex flex-col items-center justify-between font-lexendDeca md:flex-row">
           <p className="pb-2 text-sm font-light hover:text-indigo-400 md:pb-0 md:text-base lg:font-normal">
             7th International UG Medical Conference
           </p>
@@ -85,7 +85,12 @@ const Footer = () => {
                 height={20}
                 alt=""
               />
-              <a href="mailto:asclepius2k24@gmail.com" className="hover:text-purple">asclepius2k24@gmail.com</a>
+              <a
+                href="mailto:asclepius2k24@gmail.com"
+                className="hover:text-purple"
+              >
+                asclepius2k24@gmail.com
+              </a>
             </div>
           </div>
         </div>
