@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
-import { Montserrat, Lexend_Deca } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -8,10 +8,10 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
-const lexenddeca = Lexend_Deca({
-  subsets: ["latin"],
-  display: "swap",
-});
+// const lexenddeca = Lexend_Deca({
+//   subsets: ["latin"],
+//   display: "swap",
+// });
 
 export const metadata: Metadata = {
   title: "Asclepius 2024 | 7th International UG Medical Conference",

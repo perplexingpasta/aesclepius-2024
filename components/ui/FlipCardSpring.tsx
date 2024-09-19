@@ -5,7 +5,7 @@ import { useSpring, animated } from "@react-spring/web";
 
 interface FlipCardProps {
   image: string;
-  title: string;
+  title: any;
   backgroundColor: any;
   description: any;
 }

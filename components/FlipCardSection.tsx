@@ -12,10 +12,12 @@ const FlipCardSection = () => {
         <div key={id} className="grid justify-items-center">
           <FlipCardSpring
             image={image}
-            title={title}
+            title={<div dangerouslySetInnerHTML={{ __html: title }} />}
             backgroundColor={backgroundColor}
             // description={description}
-            description={<div dangerouslySetInnerHTML={{ __html: description }} />}
+            description={
+              <div dangerouslySetInnerHTML={{ __html: description }} />
+            }
           />
         </div>
       ))}

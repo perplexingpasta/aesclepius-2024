@@ -34,8 +34,8 @@ const Hero = () => {
         <div className="ml-24 flex flex-col items-start md:ml-0">
           <div className="absolute -top-32 h-[13rem] w-[13rem] opacity-50 md:-top-72 md:h-[22rem] md:w-[22rem] lg:left-80 lg:h-[32rem] lg:w-[32rem]">
             <Image
-              src="/images/temp-logo.png"
-              className="z-0 saturate-0 duration-300 ease-in-out hover:saturate-50"
+              src="/images/logo.svg"
+              className="z-0 saturate-50 duration-300 ease-in-out hover:saturate-100"
               alt="Default"
               layout="fill"
               objectFit="cover"

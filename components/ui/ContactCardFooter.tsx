@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface ContactCardProps {
@@ -15,7 +16,7 @@ const ContactCard: React.FC<ContactCardProps> = ({
 }) => {
   return (
     <div className="flex items-center rounded-lg py-3 shadow-sm">
-      <img
+      <Image
         src={imageSrc}
         alt="Profile Picture"
         width={50}

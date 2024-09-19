@@ -7,7 +7,7 @@ import Hero from "@/components/Hero2";
 import Contact from "@/components/Contact";
 import { SparklesPreview } from "@/components/SparklesPreview";
 
-const DynamicFooter = dynamic(() => import("@/components/Footer3"), {
+const DynamicFooter = dynamic(() => import("@/components/Footer4"), {
   ssr: false,
 });
 const DynamicScroll = dynamic(() => import("../components/ui/ScrollButton"), {
