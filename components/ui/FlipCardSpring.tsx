@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-// components/FlipCard.tsx
 import React, { useState, useEffect, useRef } from "react";
 import { useSpring, animated } from "@react-spring/web";
 
@@ -61,7 +60,10 @@ const FlipCardSpring: React.FC<FlipCardProps> = ({
   }, []);
 
   return (
-    <div ref={cardRef} className="perspective-1000 relative mb-10 h-96 w-80">
+    <div
+      ref={cardRef}
+      className="perspective-1000 relative mb-10 h-96 w-80 md:h-[70vh] md:w-[75vw]"
+    >
       {/* Front Side */}
       <animated.div
         className="backface-hidden absolute h-full w-full"
@@ -78,7 +80,7 @@ const FlipCardSpring: React.FC<FlipCardProps> = ({
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60" />
 
-        <h3 className="absolute bottom-4 left-4 text-xl font-bold text-white">
+        <h3 className="absolute bottom-4 left-4 text-xl font-bold text-white md:text-4xl">
           {title}
         </h3>
       </animated.div>
@@ -92,7 +94,7 @@ const FlipCardSpring: React.FC<FlipCardProps> = ({
           backgroundColor,
         }}
       >
-        <p className="rotate-y-180 font-lexendDeca text-[0.9rem]">
+        <p className="rotate-y-180 font-lexendDeca text-[0.9rem] md:text-2xl">
           {description}
         </p>
       </animated.div>

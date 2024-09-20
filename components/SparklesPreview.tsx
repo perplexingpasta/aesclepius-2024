@@ -8,7 +8,7 @@ export function SparklesPreview() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 500); // Delay in milliseconds
+    }, 2000); // Delay in milliseconds
 
     return () => clearTimeout(timer);
   }, []);
@@ -16,7 +16,7 @@ export function SparklesPreview() {
   return (
     <div className="fixed flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-md">
       <div
-        style={{ transitionDuration: "2000ms" }}
+        style={{ transitionDuration: "3000ms" }}
         className={`absolute inset-0 h-screen w-full transition-opacity ${isVisible ? "opacity-100" : "opacity-0"}`}
       >
         <SparklesCore

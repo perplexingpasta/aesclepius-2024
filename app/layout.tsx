@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
+import Script from "next/script";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -33,11 +34,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={montserrat.className}>
-        <SmoothScroll>{children}</SmoothScroll>
-        <Analytics />
-      </body>
-    </html>
+    <>
+      <Script
+        defer
+        src="https://cloud.umami.is/script.js"
+        data-website-id="c02acaae-a32d-4fd0-b4f0-24962e3b8cc6"
+      />
+      <html lang="en">
+        <body className={montserrat.className}>
+          <SmoothScroll>{children}</SmoothScroll>
+          <Analytics />
+        </body>
+      </html>
+    </>
   );
 }

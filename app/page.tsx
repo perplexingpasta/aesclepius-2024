@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
-
 import dynamic from "next/dynamic";
-// import GridAndDotBg from "@/components/ui/GridAndDotBg";
 import Hero from "@/components/Hero3";
 import Contact from "@/components/Contact";
 import { SparklesPreview } from "@/components/SparklesPreview";
@@ -39,8 +37,6 @@ const page = () => {
       </div>
       <div className="relative mx-auto flex flex-col items-center justify-center overflow-clip px-5 sm:px-10">
         <div className="w-full max-w-7xl">
-          {/* <GridAndDotBg /> */}
-          {/* <Home /> */}
           <DynamicFlipCardSection />
           <DynamicReadyTo />
           <section className="block lg:hidden">

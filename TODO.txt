@@ -1,19 +1,19 @@
 use svg logo ✅
 add spotlights in hero if bg is sufficiently dark ✅
 use aceternity gradient bg in ready to section
-open all files before committing
 preload critical and fonts
-make all images webp
 
 add video
 add gsap for scroll trigger fly in sections
 change metadata for asclep ✅
 slow loading for snowfall ✅
 implemented lenis ✅
+futher compress events images and webp
+compress logo.svg and webp
 
 organising comittee view side by side in tablet view ✅
 improve performance ✅
-events in tab view
+events horizontal scroll in tab view
 foss analytics
 
 add logo in favicon ✅
