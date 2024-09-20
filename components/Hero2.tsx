@@ -42,7 +42,7 @@ const Hero = () => {
               priority
             />
           </div>
-          <h1 className="z-10 text-sm uppercase tracking-widest text-white-100 lg:-mb-4 lg:pl-8 lg:text-lg">
+          <h1 className="z-10 text-sm uppercase tracking-widest text-white-100 md:pl-12 lg:-mb-4 lg:pl-8 lg:text-lg">
             JSS Medical College Presents
           </h1>
 

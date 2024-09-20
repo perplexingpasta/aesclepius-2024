@@ -8,32 +8,32 @@ const Footer = () => {
     <div className="relative mx-auto mt-20 flex max-w-[85rem] flex-col items-center justify-center overflow-clip px-5 pt-10 text-white sm:px-10 lg:pt-20">
       <div className="relative w-full pb-10" id="footer">
         <div className="relative flex flex-col justify-around lg:flex-1 lg:flex-row">
-          <div className="absolute -top-6 h-[10rem] w-[10rem] opacity-40 md:-top-72 md:h-[22rem] md:w-[22rem] lg:-top-12 lg:left-32 lg:h-[22rem] lg:w-[22rem]">
+          <div className="absolute -top-6 h-[10rem] w-[10rem] opacity-40 lg:left-32 lg:h-[22rem] lg:w-[22rem]">
             <Image
-              src="/images/temp-logo.png"
-              className="z-0 saturate-0"
+              src="/images/logo.svg"
+              className="z-0 saturate-50"
               alt="Default"
               layout="fill"
               objectFit="cover"
               priority
             />
           </div>
-          <div className="z-50 ml-2 mt-12 md:ml-0 md:mt-20">
-            <h1 className="z-10 mt-2 text-4xl font-black uppercase leading-tight tracking-wide text-white md:mt-0 md:text-5xl lg:text-7xl lg:!leading-snug">
+          <div className="z-50 ml-2 mt-12 lg:ml-0 lg:mt-20">
+            <h1 className="z-10 mt-2 text-4xl font-black uppercase leading-tight tracking-wide text-white lg:mt-0 lg:text-7xl lg:!leading-snug">
               Asclepius {/* <br className="hidden lg:block" /> */}
               <span className="gradient-text animate-gradient font-black text-transparent">
                 2024
               </span>
             </h1>
-            <p className="z-10 mt-2 font-lexendDeca text-base font-light uppercase italic text-white md:my-10 md:mt-0 md:text-lg md:tracking-widest lg:my-0 lg:text-xl">
+            <p className="z-10 mt-2 font-lexendDeca text-base font-light uppercase italic text-white lg:my-0 lg:mt-0 lg:text-xl lg:tracking-widest">
               Pathos To Praxis
             </p>
           </div>
 
-          {/* <br className="block md:hidden" />
-        <br className="block md:hidden" /> */}
-          <div className="hidden flex-col justify-between md:mb-0 md:ml-20 md:mt-0 md:flex">
-            <h1 className="mb-2 text-xl md:text-2xl">Organising Committee</h1>
+          {/* <br className="block lg:hidden" />
+        <br className="block lg:hidden" /> */}
+          <div className="hidden flex-col justify-between lg:mb-0 lg:ml-20 lg:mt-0 lg:flex">
+            <h1 className="mb-2 text-xl lg:text-2xl">Organising Committee</h1>
             {core.map(({ id, img, name, desig, number }) => (
               <div key={id}>
                 <ContactCard
@@ -47,18 +47,18 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-4 border-b border-gray-800 md:mt-12" />
+        <div className="mt-4 border-b border-gray-800 lg:mt-12" />
 
-        <div className="relative z-50 mt-4 flex flex-col items-center justify-between font-lexendDeca md:flex-row">
-          <p className="pb-2 text-sm font-light hover:text-indigo-400 md:pb-0 md:text-base lg:font-normal">
+        <div className="relative z-50 mt-4 flex flex-col items-center justify-between font-lexendDeca lg:flex-row">
+          <p className="pb-2 text-sm font-light hover:text-indigo-400 lg:pb-0 lg:text-base lg:font-normal">
             7th International UG Medical Conference
           </p>
 
-          <p className="text-sm font-light hover:text-indigo-400 md:text-base lg:font-normal">
+          <p className="text-sm font-light hover:text-indigo-400 lg:text-base lg:font-normal">
             22 - 26th October
           </p>
 
-          <div className="flex items-center gap-6 pt-5 md:gap-3 md:pt-0">
+          <div className="flex items-center gap-6 pt-5 lg:gap-3 lg:pt-0">
             {socialMedia.map((profile) => (
               <div
                 key={profile.id}

@@ -48,7 +48,7 @@ const page = () => {
           </section>
         </div>
       </div>
-      <footer className="bg-black" id="#footer">
+      <footer id="#footer">
         <DynamicFooter />
       </footer>
     </div>
