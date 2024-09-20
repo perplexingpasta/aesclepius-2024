@@ -43,7 +43,7 @@ const page = () => {
           {/* <Home /> */}
           <DynamicFlipCardSection />
           <DynamicReadyTo />
-          <section className="block md:hidden">
+          <section className="block lg:hidden">
             <Contact />
           </section>
         </div>

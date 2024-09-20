@@ -7,14 +7,14 @@ import LitUpButtonBg from "./ui/LitUpButtonBg";
 
 const ReadyTo = () => {
   return (
-    <div className="mb-32 md:mb-16 flex flex-col items-center" id="readyto">
-      <h1 className="text-center text-4xl font-light tracking-wider text-white md:text-5xl lg:max-w-[45vw]">
+    <div className="mb-32 flex flex-col items-center lg:mb-16" id="readyto">
+      <h1 className="text-center text-4xl font-light tracking-wider text-white lg:max-w-[45vw] lg:text-5xl">
         Ready to learn, engage & ascend?
       </h1>
-      {/* <p className="my-5 text-center text-white-200 md:mb-10">
+      {/* <p className="my-5 text-center text-white-200 lg:mb-10">
         Register for Asclepius 2024 today to...
       </p> */}
-      <div className="flex my-5 md:my-10 flex-col items-center justify-center space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+      <div className="my-5 flex flex-col items-center justify-center space-y-4 md:my-10 md:flex-row md:space-x-4 md:space-y-0">
         <Link
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           target="_blank"
