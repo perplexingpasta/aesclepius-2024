@@ -16,7 +16,7 @@ export function SparklesPreview() {
   return (
     <div className="fixed flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-md">
       <div
-        style={{ transitionDuration: "3000ms" }}
+        style={{ transitionDuration: "3500ms" }}
         className={`absolute inset-0 h-screen w-full transition-opacity ${isVisible ? "opacity-100" : "opacity-0"}`}
       >
         <SparklesCore

@@ -2,9 +2,11 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import Hero from "@/components/Hero3";
-import Contact from "@/components/Contact";
 import { SparklesPreview } from "@/components/SparklesPreview";
 
+const DynamicContact = dynamic(() => import("@/components/Contact"), {
+  ssr: false,
+});
 const DynamicFooter = dynamic(() => import("@/components/Footer4"), {
   ssr: false,
 });
@@ -40,7 +42,7 @@ const page = () => {
           <DynamicFlipCardSection />
           <DynamicReadyTo />
           <section className="block lg:hidden">
-            <Contact />
+            <DynamicContact />
           </section>
         </div>
       </div>
