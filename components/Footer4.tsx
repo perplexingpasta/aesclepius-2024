@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="absolute -top-6 h-[10rem] w-[10rem] opacity-40 lg:left-32 lg:h-[22rem] lg:w-[22rem]">
             <Image
               src="/images/logo.svg"
-              className="z-0 saturate-50"
+              className="z-0"
               alt="Default"
               layout="fill"
               objectFit="cover"

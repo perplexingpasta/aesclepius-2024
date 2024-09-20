@@ -188,10 +188,6 @@ const config = {
       backgroundImage: {
         "footer-grid": "url('/images/footer-grid.svg')",
       },
-      // cursor: {
-      //   'custom': 'url(/cursors/cursor-white.svg), auto',
-      //   'pointer': 'url(/cursors/pointer-white.svg), pointer',
-      // },
     },
   },
   plugins: [

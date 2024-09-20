@@ -1,24 +1,20 @@
-add spotlights in hero if bg is sufficiently dark
-add gsap everywhere
-use aceternity gradient bg
-use svg logo 
-add nifty animation in hero section around the title
-og link meta tags
-wine gradient for background
+use svg logo ✅
+add spotlights in hero if bg is sufficiently dark ✅
+use aceternity gradient bg in ready to section
+open all files before committing
+preload critical and fonts
 make all images webp
 
 add video
 add gsap for scroll trigger fly in sections
-add smooth scroll, lenis bg, lenis cursor, horizontal scroll events
-change metadata for asclep
-slow loading for snowfall
+change metadata for asclep ✅
+slow loading for snowfall ✅
+implemented lenis ✅
+
+organising comittee view side by side in tablet view ✅
+improve performance ✅
+events in tab view
+foss analytics
 
 add logo in favicon ✅
 flipcards for phone ✅
-
-SECTIONS:
-hero
-events
-contact section 
-social links and cta button
-footer

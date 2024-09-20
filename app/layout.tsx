@@ -2,26 +2,22 @@ import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
 });
 
-// const lexenddeca = Lexend_Deca({
-//   subsets: ["latin"],
-//   display: "swap",
-// });
-
 export const metadata: Metadata = {
   title: "Asclepius 2024 | 7th International UG Medical Conference",
   description:
-    "We help dermatologists with consistent, predictable & loyal patient acquisition. We get dermatologists more patients and help them grow their practice online by running paid ads on facebook and google and professional website development using nextjs. We also help set up their google business profile and increase google reviews on google maps of their clinic.",
+    "Ascelpius is the 7th International UG Medical Conference taking place in JSS Medical College, Mysuru, India from 22nd to 26th October 2024. All delegates are welcome.",
   other: {
-    "twitter:image": "/images/ogmeta.png",
-    "twitter:card": "céleste consulting",
-    "og:url": "https://www.celesteconsulting.in/",
-    "og:image": "/images/ogmeta.png",
+    // "twitter:image": "/images/ogmeta.png",
+    "twitter:card": "Asclepius 2024",
+    "og:url": "https://asclepius2024.in",
+    // "og:image": "/images/ogmeta.png",
     "og:type": "website",
   },
   icons: {
@@ -39,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
         <Analytics />
       </body>
     </html>

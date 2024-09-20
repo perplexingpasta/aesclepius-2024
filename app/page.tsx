@@ -3,7 +3,7 @@ import React from "react";
 
 import dynamic from "next/dynamic";
 // import GridAndDotBg from "@/components/ui/GridAndDotBg";
-import Hero from "@/components/Hero2";
+import Hero from "@/components/Hero3";
 import Contact from "@/components/Contact";
 import { SparklesPreview } from "@/components/SparklesPreview";
 
@@ -29,7 +29,7 @@ const page = () => {
       {/* <div className="overflow-clip"> */}
       <SparklesPreview />
       <Hero />
-      <div className="mt-4 flex flex-col items-center justify-center text-center text-xl font-medium text-white md:mt-6 lg:text-4xl">
+      <div className="mt-8 flex flex-col items-center justify-center text-center text-xl font-medium text-white md:mt-12 md:text-2xl lg:text-4xl">
         <p>
           7th International <br className="md:hidden" />
           UG Medical Conference
