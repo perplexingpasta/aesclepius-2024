@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="relative flex flex-col justify-around lg:flex-1 lg:flex-row">
           <div className="absolute -top-6 h-[10rem] w-[10rem] opacity-40 lg:left-32 lg:h-[22rem] lg:w-[22rem]">
             <Image
-              src="/images/logo.svg"
+              src="/images/logopng.png"
               className="z-0"
               alt="Default"
               layout="fill"

@@ -32,14 +32,14 @@ const page = () => {
       {/* <div className="overflow-clip"> */}
       <SparklesPreview />
       <Hero />
-      <div className="mt-16 flex flex-col items-center justify-center text-center text-xl font-medium text-white md:mt-12 md:text-3xl lg:text-4xl">
+      {/* <div className="mt-16 flex flex-col items-center justify-center text-center text-xl font-medium text-white md:mt-12 md:text-3xl lg:text-4xl">
         <p>
           7th International <br className="md:hidden" />
           UG Medical Conference
         </p>
         <p className="mt-2 text-purpledark lg:text-3xl">22 - 26th October</p>
         <ScrollButton />
-      </div>
+      </div> */}
       <div className="relative mx-auto flex flex-col items-center justify-center overflow-clip px-5 sm:px-10">
         <div className="w-full max-w-7xl">
           {/* <DynamicFlipCardSection /> */}

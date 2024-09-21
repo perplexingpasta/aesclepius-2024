@@ -5,7 +5,7 @@ use aceternity gradient bg in ready to section X
 change metadata for asclep ✅
 slow loading for snowfall ✅
 implemented lenis ✅
-compress logo.svg to webp
+compress logo.svg to webp ✅
 
 organising comittee view side by side in tablet view ✅
 improve performance ✅
@@ -30,10 +30,15 @@ download svg icon w view brochure ✅
 checkout buttons from aceternity ✅
 background lines in readyto section ✅
 
+added gsap in hero ✅
 futher compress events images and webp
 pinned image in tab view (refer to ca copy)
-small distance gsap fly in; only flyin from bottom like apple or fadein; no sideways flyin
 pathos to praxis gradual load
-inspect figma's html and feed to gpt
+implement chat's figma code
 replace lenis w locomotive
 remove lenis; use only locomotive and gsap
+
+1. events in md and lg view
+2. figma circles
+3. locomotive smooth scroll - sheriyans
+4. some insane codegrid shit

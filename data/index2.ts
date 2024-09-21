@@ -46,7 +46,7 @@ export const core = [
 export const events = [
   {
     id: 1,
-    image: "/images/events/workshop.jpeg",
+    image: "/images/events/workshop.webp",
     // title: "WORKSHOPS",
     title: "WORKSHOPS",
     backgroundColor: "#501865",
@@ -62,7 +62,7 @@ export const events = [
   },
   {
     id: 2,
-    image: "/images/events/quiz.jpeg",
+    image: "/images/events/quiz.webp",
     // title: "QUIZ",
     title: "QUIZ",
     backgroundColor: "#A63C63",
@@ -73,7 +73,7 @@ export const events = [
   },
   {
     id: 3,
-    image: "/images/events/science.jpeg",
+    image: "/images/events/science.webp",
     // title: "SCIENTIFIC EVENTS",
     title: "SCIENTIFIC EVENTS",
     backgroundColor: "#5E0A5C",
@@ -86,7 +86,7 @@ export const events = [
   },
   {
     id: 4,
-    image: "/images/events/literary.jpeg",
+    image: "/images/events/literary.webp",
     // title: "LITERARY EVENTS",
     title: "LITERARY EVENTS",
     backgroundColor: "#732002",
@@ -98,7 +98,7 @@ export const events = [
   },
   {
     id: 5,
-    image: "/images/events/panels.jpeg",
+    image: "/images/events/panels.webp",
     // title: "PANEL DISCUSSIONS",
     title: "PANEL DISCUSSIONS",
     backgroundColor: "#51101C",
@@ -108,7 +108,7 @@ export const events = [
   },
   {
     id: 6,
-    image: "/images/events/symposium2.jpeg",
+    image: "/images/events/symposium2.webp",
     // title: "SYMPOSIUM",
     title: "SYMPOSIUM",
     backgroundColor: "#733848",
@@ -117,7 +117,7 @@ export const events = [
   },
   {
     id: 7,
-    image: "/images/events/mun3.jpeg",
+    image: "/images/events/mun3.webp",
     // title: "MUN",
     title: "MUN",
     backgroundColor: "#3D1E65",
@@ -126,7 +126,7 @@ export const events = [
   },
   {
     id: 8,
-    image: "/images/events/online2.jpeg",
+    image: "/images/events/online2.webp",
     // title: "ONLINE EVENTS",
     title: "ONLINE EVENTS",
     backgroundColor: "#001175",

@@ -1,20 +1,44 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { FaLocationArrow } from "react-icons/fa6";
 import { IoMdDownload } from "react-icons/io";
 import LitUpButton from "./ui/LitUpButton";
 import Link from "next/link";
 import LitUpButtonBg from "./ui/LitUpButtonBg";
-// import { BackgroundGradientAnimation } from "./ui/GradientBg";
-// import { BackgroundLines } from "./ui/background-lines";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const ReadyTo = () => {
+  const readyToRef = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(
+      readyToRef.current,
+      { y: 50, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: readyToRef.current,
+          start: "top 80%",
+          toggleActions: "play none none reset",
+        },
+      },
+    );
+  }, []);
+
   return (
     <div
       className="my-36 flex flex-col items-center md:my-52 lg:mb-16"
       id="readyto"
     >
-      {/* <BackgroundLines className="relative flex w-full flex-col items-center justify-center bg-transparent"> */}
-      <h1 className="mb-4 text-center text-5xl font-light lowercase leading-tight tracking-wider text-white md:max-w-[85%] md:text-6xl md:leading-tight lg:max-w-[45vw] lg:text-5xl">
+      <h1
+        ref={readyToRef}
+        className="mb-4 text-center text-5xl font-light lowercase leading-tight tracking-wider text-white md:max-w-[85%] md:text-6xl md:leading-tight lg:max-w-[45vw] lg:text-5xl"
+      >
         Ready to <br className="block md:hidden" /> learn,{" "}
         <br className="block md:hidden" /> engage &{" "}
         <br className="block md:hidden" /> ascend?
@@ -33,11 +57,7 @@ const ReadyTo = () => {
             position="right"
           />
         </Link>
-        <a
-          href="/images/logo.svg"
-          download="Asclepius Logo.svg"
-          target="_blank"
-        >
+        <a href="/images/logopng.png" download="Asclepius Logo" target="_blank">
           <LitUpButton
             title="View Brochure"
             icon={<IoMdDownload />}
@@ -45,7 +65,6 @@ const ReadyTo = () => {
           />
         </a>
       </div>
-      {/* </BackgroundLines> */}
     </div>
   );
 };
