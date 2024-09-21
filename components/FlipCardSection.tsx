@@ -4,19 +4,18 @@ import { events } from "@/data/index2";
 
 const FlipCardSection = () => {
   return (
-    <div className="mb-24 block pt-10 lg:hidden" id="events">
-      <h1 className="mb-8 text-center text-4xl font-light tracking-wider text-white">
+    <div className="mb-24 pt-10 md:mt-16" id="events">
+      <h1 className="mb-8 mt-10 text-center text-5xl md:text-7xl md:my-12 font-light lowercase tracking-widest text-white">
         Events
       </h1>
       {events.map(({ id, image, title, backgroundColor, description }) => (
         <div key={id} className="grid justify-items-center">
           <FlipCardSpring
             image={image}
-            title={<div dangerouslySetInnerHTML={{ __html: title }} />}
+            title={<h1 dangerouslySetInnerHTML={{ __html: title }} />}
             backgroundColor={backgroundColor}
-            // description={description}
             description={
-              <div dangerouslySetInnerHTML={{ __html: description }} />
+              <p dangerouslySetInnerHTML={{ __html: description }} />
             }
           />
         </div>

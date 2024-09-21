@@ -14,7 +14,7 @@ function SmoothScroll({ children }: SmoothScrollProps) {
       options={{
         lerp: 0.5,
         duration: 1,
-        smoothWheel: true,
+        smoothWheel: false,
       }}
     >
       {children}

@@ -80,9 +80,9 @@ const FlipCardSpring: React.FC<FlipCardProps> = ({
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60" />
 
-        <h3 className="absolute bottom-4 left-4 text-xl font-bold text-white md:text-4xl">
+        <div className="absolute bottom-6 left-5 text-xl font-black tracking-wide text-white md:text-4xl">
           {title}
-        </h3>
+        </div>
       </animated.div>
 
       {/* Back Side */}
@@ -94,9 +94,9 @@ const FlipCardSpring: React.FC<FlipCardProps> = ({
           backgroundColor,
         }}
       >
-        <p className="rotate-y-180 font-lexendDeca text-[0.9rem] md:text-2xl">
+        <div className="rotate-y-180 font-lexendDeca text-[0.9rem] md:text-2xl">
           {description}
-        </p>
+        </div>
       </animated.div>
     </div>
   );

@@ -21,7 +21,7 @@ const ContactCard: React.FC<ContactCardProps> = ({
         alt="Profile Picture"
         width={50}
         height={50}
-        className="mr-4 h-12 w-12 rounded-full"
+        className="mr-5 h-[3.4rem] w-[3.4rem] rounded-full"
       />
       <div>
         <div className="font-semibold">{name}</div>

@@ -8,7 +8,7 @@ export function SparklesPreview() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 2000); // Delay in milliseconds
+    }, 1000); // Delay in milliseconds
 
     return () => clearTimeout(timer);
   }, []);

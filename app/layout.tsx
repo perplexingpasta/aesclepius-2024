@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/react";
+// import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
@@ -37,13 +37,14 @@ export default function RootLayout({
     <>
       <Script
         defer
+        type="text/partytown"
         src="https://cloud.umami.is/script.js"
         data-website-id="c02acaae-a32d-4fd0-b4f0-24962e3b8cc6"
       />
       <html lang="en">
         <body className={montserrat.className}>
           <SmoothScroll>{children}</SmoothScroll>
-          <Analytics />
+          {/* <Analytics /> */}
         </body>
       </html>
     </>

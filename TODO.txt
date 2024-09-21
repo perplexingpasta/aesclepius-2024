@@ -13,8 +13,27 @@ foss analytics ✅
 add logo in favicon ✅
 flipcards for phone ✅
 
-add video
-events horizontal scroll in tab view
+lessen delay of snow ✅
+partytown in unami script ✅
+remove vercel analytics ✅
+flipcaard titles a bit to right ✅
+scroll button top ball ✅
+study apple, procreate ✅
+don't dynamically load scroll button ✅
+make jss presents smaller in mobile view ✅
+remove bg-gradient-rj ✅
+slightly bigger committee pfp ✅
+
+headings in lowercase, light, huge ✅
+star instead of numbers behind cards ✅
+download svg icon w view brochure ✅
+checkout buttons from aceternity ✅
+background lines in readyto section ✅
+
 futher compress events images and webp
-add gsap for scroll trigger fly
-preload critical and fonts
+pinned image in tab view (refer to ca copy)
+small distance gsap fly in; only flyin from bottom like apple or fadein; no sideways flyin
+pathos to praxis gradual load
+inspect figma's html and feed to gpt
+replace lenis w locomotive
+remove lenis; use only locomotive and gsap

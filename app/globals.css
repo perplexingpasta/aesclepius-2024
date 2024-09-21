@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-image: url("/images/bg-gradient-rj.webp");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;
