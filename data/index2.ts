@@ -56,7 +56,7 @@ export const events = [
     ✦ <strong>USG Guided Nerve Block Workshop</strong> <br />
     ✦ <strong>Case Chronicles</strong> - A case report writing bootcamp <br />
     ✦ <strong>Vital flow</strong> - Nephrology Workshop <br />
-    ✦ <strong>Crime Scene Investigation Workshop</strong> <br />
+    ✦ <strong>#whodunnit</strong> - Crime Scene Investigation Workshop <br />
     ✦ <strong>The Olympian’s Aid</strong> - From Orthopaedic Injury Management to Peak Performance <br />
     ✦ <strong>Illumineyes</strong> - An eye-opening journey into Opthalmology`,
   },

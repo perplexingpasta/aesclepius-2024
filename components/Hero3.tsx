@@ -149,7 +149,7 @@ const Hero = () => {
           ".fly-in-dates",
           { y: 25, opacity: 0 },
           { y: 0, opacity: 1, duration: 1, ease: "power3.out" },
-          "-=1",
+          "-=0.5",
         )
         .fromTo(
           ".fade-in-scrollButton",
@@ -193,15 +193,15 @@ const Hero = () => {
             <h1 className="fly-in-jss z-10 -mb-2 pl-2 text-xs uppercase tracking-widest text-white opacity-75 md:mb-0 md:pl-6 md:text-lg lg:-mb-4 lg:pl-8 lg:text-lg">
               JSS Medical College Presents
             </h1>
-            <h1 className="fade-in-image z-10 mt-2 text-5xl font-black uppercase leading-tight tracking-wide text-white md:mt-0 md:text-8xl lg:text-9xl lg:!leading-snug">
-              Asclepius <br className="block lg:hidden" />
-              <span className="hidden lg:inline">&nbsp;</span>
+            <h1 className="fade-in-image z-10 mt-2 text-5xl font-black uppercase leading-tight tracking-wide text-white md:mt-0 md:text-8xl xl:text-9xl 2xl:!leading-snug">
+              Asclepius <br className="block 2xl:hidden" />
+              <span className="hidden 2xl:inline">&nbsp;</span>
               <span className="gradient-text animate-gradient font-black text-transparent">
                 2024
               </span>
             </h1>
             {/* Fade-in animation for this paragraph */}
-            <p className="fade-in-pathos z-10 mt-2 font-lexendDeca text-base font-light uppercase italic tracking-wide text-white md:my-10 md:mt-3 md:text-2xl md:tracking-widest lg:my-0 lg:text-3xl">
+            <p className="fade-in-pathos z-10 mt-2 font-lexendDeca text-base font-light uppercase italic tracking-wide text-white md:my-10 md:mt-3 md:text-2xl md:tracking-widest 2xl:my-0 2xl:text-3xl">
               Pathos To Praxis
             </p>
           </div>
@@ -212,9 +212,11 @@ const Hero = () => {
           7th International <br className="md:hidden" />
           UG Medical Conference
         </p>
-        <p className="mt-2 fly-in-dates text-purpledark lg:text-3xl">22 - 26th October</p>
+        <p className="fly-in-dates mt-2 text-purpledark lg:text-3xl">
+          22 - 26th October
+        </p>
         <div className="fade-in-scrollButton">
-        <ScrollButton  />
+          <ScrollButton />
         </div>
       </div>
     </div>
