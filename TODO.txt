@@ -31,14 +31,16 @@ checkout buttons from aceternity ✅
 background lines in readyto section ✅
 
 added gsap in hero ✅
-futher compress events images and webp
+futher compress events images and webp ✅
 pinned image in tab view (refer to ca copy)
-pathos to praxis gradual load
+pathos to praxis gradual load ✅
 implement chat's figma code
 replace lenis w locomotive
 remove lenis; use only locomotive and gsap
 
-1. events in md and lg view
+1. events in md and lg view ✅
 2. figma circles
 3. locomotive smooth scroll - sheriyans
 4. some insane codegrid shit
+5. loading state
+6. for events in md & lg, don't use index2 rather use repeated code for more customisation; and also snapping

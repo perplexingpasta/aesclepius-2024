@@ -32,7 +32,7 @@ const ReadyTo = () => {
 
   return (
     <div
-      className="my-36 flex flex-col items-center md:my-52 lg:mb-16"
+      className="my-36 flex flex-col items-center md:my-0 md:mb-40 lg:mt-52 lg:mb-40"
       id="readyto"
     >
       <h1

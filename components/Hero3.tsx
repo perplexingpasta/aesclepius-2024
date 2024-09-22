@@ -137,13 +137,13 @@ const Hero = () => {
           ".fade-in-pathos", // Fade-in for "Pathos to Praxis"
           { opacity: 0 },
           { opacity: 1, duration: 2, ease: "power3.out" },
-          "-=0.5",
+          "-=1",
         )
         .fromTo(
           ".fly-in-tagline", // Fly-in for dates
           { y: 25, opacity: 0 },
           { y: 0, opacity: 1, duration: 1, ease: "power3.out" },
-          "-=1.5",
+          "-=1",
         )
         .fromTo(
           ".fly-in-dates",
@@ -201,7 +201,7 @@ const Hero = () => {
               </span>
             </h1>
             {/* Fade-in animation for this paragraph */}
-            <p className="fade-in-pathos z-10 mt-2 font-lexendDeca text-base font-light uppercase italic tracking-wide text-white md:my-10 md:mt-3 md:text-2xl md:tracking-widest lg:my-0 lg:text-2xl">
+            <p className="fade-in-pathos z-10 mt-2 font-lexendDeca text-base font-light uppercase italic tracking-wide text-white md:my-10 md:mt-3 md:text-2xl md:tracking-widest lg:my-0 lg:text-3xl">
               Pathos To Praxis
             </p>
           </div>

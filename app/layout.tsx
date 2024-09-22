@@ -43,7 +43,8 @@ export default function RootLayout({
       />
       <html lang="en">
         <body className={montserrat.className}>
-          <SmoothScroll>{children}</SmoothScroll>
+          {/* <SmoothScroll>{children}</SmoothScroll> */}
+          {children}
           {/* <Analytics /> */}
         </body>
       </html>

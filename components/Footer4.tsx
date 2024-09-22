@@ -33,7 +33,7 @@ const Footer = () => {
           {/* <br className="block lg:hidden" />
         <br className="block lg:hidden" /> */}
           <div className="hidden flex-col justify-between lg:mb-0 lg:ml-20 lg:mt-0 lg:flex">
-            <h1 className="mb-2 text-xl lg:text-2xl">Organising Committee</h1>
+            <h1 className="mb-2 text-xl lg:text-2xl">organising committee</h1>
             {core.map(({ id, img, name, desig, number }) => (
               <div key={id}>
                 <ContactCard
