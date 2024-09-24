@@ -1,14 +1,11 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import dynamic from "next/dynamic";
 import Hero from "@/components/Hero3";
 import { SparklesPreview } from "@/components/SparklesPreview";
 import FlipCardSection from "../components/FlipCardSection";
 import Events3 from "@/components/Events3";
-import FigmaCircles from "@/components/FigmaCircles";
-import CircleAnimation from "@/components/FigmaCirclesInspect";
 import FollowMouse from "@/components/FollowMouse";
-// import useLocomotiveScroll from "@/hooks/useLocomotiveScroll";
 
 const DynamicContact = dynamic(() => import("@/components/Contact"), {
   ssr: false,
@@ -21,15 +18,6 @@ const DynamicReadyTo = dynamic(() => import("../components/ReadyTo"), {
 });
 
 const Home = () => {
-  // useLocomotiveScroll();
-
-  // useEffect(() => {
-  //   async () => {
-  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
-  //     const locomotiveScroll = new LocomotiveScroll();
-  //   };
-  // }, []);
-
   return (
     <div className="overflow-clip bg-black-100">
       <SparklesPreview />
