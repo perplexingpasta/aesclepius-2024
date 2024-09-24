@@ -215,10 +215,10 @@ const Events3: React.FC = () => {
   }, [events]);
 
   return (
-    <div className="md:mt-56">
+    <div className="md:mt-56" id="events">
       <h1
         ref={eventsRef}
-        className="mb-8 mt-10 text-center text-5xl font-light lowercase tracking-widest text-white md:my-12 lg:mb-24 md:text-7xl lg:text-8xl"
+        className="mb-8 mt-10 text-center text-5xl font-light lowercase tracking-widest text-white md:my-12 md:text-7xl lg:mb-24 lg:text-8xl"
       >
         Events
       </h1>

@@ -34,14 +34,19 @@ added gsap in hero ✅
 futher compress events images and webp ✅
 pinned image in tab view (refer to ca copy) ✅
 pathos to praxis gradual load ✅
-
-1. events in md and lg view ✅
-2. figma circles
-3. locomotive smooth scroll - sheriyans
-4. some insane codegrid shit
-5. loading state (0 to 100%)
-6. for events in md & lg, don't use index2 rather use repeated code for more customisation ✅
+events in md and lg view ✅
+- for events in md & lg, don't use index2 rather use repeated code for more customisation ✅
     also snapping 
     text generate effect for event titles in md and lg view ✅
-7. tablet in landscape mode -  asclepius title gets cut off ✅
-8. page not found
+- tablet in landscape mode -  asclepius title gets cut off ✅
+
+added cursor followed by circle ✅
+improved hero section animations ✅
+rj page at top right ✅
+added gsap to org committee and footer
+
+- some insane codegrid shit
+- figma circles
+- locomotive smooth scroll - sheriyans
+- loading state (0 to 100%)
+- page not found

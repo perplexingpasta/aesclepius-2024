@@ -7,6 +7,7 @@ import FlipCardSection from "../components/FlipCardSection";
 import Events3 from "@/components/Events3";
 import FigmaCircles from "@/components/FigmaCircles";
 import CircleAnimation from "@/components/FigmaCirclesInspect";
+import FollowMouse from "@/components/FollowMouse";
 // import useLocomotiveScroll from "@/hooks/useLocomotiveScroll";
 
 const DynamicContact = dynamic(() => import("@/components/Contact"), {
@@ -22,16 +23,17 @@ const DynamicReadyTo = dynamic(() => import("../components/ReadyTo"), {
 const Home = () => {
   // useLocomotiveScroll();
 
-  useEffect(() => {
-    async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    };
-  }, []);
+  // useEffect(() => {
+  //   async () => {
+  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
+  //     const locomotiveScroll = new LocomotiveScroll();
+  //   };
+  // }, []);
 
   return (
     <div className="overflow-clip bg-black-100">
       <SparklesPreview />
+      <FollowMouse />
       <Hero />
       <main className="relative mx-auto flex flex-col items-center justify-center overflow-clip px-5 sm:px-10">
         <div className="w-full max-w-7xl">

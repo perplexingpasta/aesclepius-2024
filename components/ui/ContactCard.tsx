@@ -1,5 +1,8 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 interface ContactCardProps {
   imageSrc: string;
@@ -14,8 +17,33 @@ const ContactCard: React.FC<ContactCardProps> = ({
   designation,
   number,
 }) => {
+  const eventsRef = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(
+      eventsRef.current,
+      { y: 50, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: eventsRef.current,
+          start: "top 90%",
+          toggleActions: "play none none reset",
+        },
+      },
+    );
+  }, []);
+
   return (
-    <div className="flex items-center rounded-lg py-3 shadow-sm">
+    <div
+      ref={eventsRef}
+      className="flex items-center rounded-lg py-3 shadow-sm"
+    >
       <Image
         src={imageSrc}
         alt="Profile Picture"

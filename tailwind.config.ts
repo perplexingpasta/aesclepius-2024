@@ -26,6 +26,9 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        "3xl": "1900px",
+      },
       fontFamily: {
         lexend: ["Lexend", "Helvetica", "Arial", "sans-serif"],
         lexendDeca: ["LexendDeca", "Helvetica", "Arial", "sans-serif"],

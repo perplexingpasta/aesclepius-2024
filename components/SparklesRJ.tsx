@@ -2,13 +2,13 @@
 import React, { useEffect, useState } from "react";
 import { SparklesCore } from "./ui/Sparkles";
 
-export function SparklesPreview() {
+export function SparklesRJ() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 2500); // Delay in milliseconds
+    }, 2000); // Delay in milliseconds
 
     return () => clearTimeout(timer);
   }, []);
