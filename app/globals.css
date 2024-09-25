@@ -161,6 +161,8 @@
   );
   background-size: 500% 500%;
   background-clip: text;
+  -webkit-background-clip: text; /* For Safari */
+  color: transparent;
 }
 
 /* FROM NIKE */
