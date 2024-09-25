@@ -192,7 +192,7 @@ const Hero = () => {
           />
         </svg>
       </Link>
-      <div className="relative -ml-[10%] pb-20 pt-[30vh] md:pt-[40vh] lg:-ml-[30%] lg:pt-[40vh]">
+      <div className="relative -ml-[10%] pb-20 pt-[30vh] md:pt-[40vh] lg:-ml-[30%] lg:pt-[34vh]">
         {/* SPOTLIGHTS */}
         <div>
           <Spotlight
@@ -222,21 +222,21 @@ const Hero = () => {
             <h1 className="fly-in-jss z-10 -mb-2 pl-2 text-xs uppercase tracking-widest text-white opacity-75 md:mb-0 md:pl-6 md:text-lg lg:-mb-4 lg:pl-8 lg:text-lg">
               JSS Medical College Presents
             </h1>
-            <h1 className="fade-in-image 3xl:!leading-snug z-10 mt-2 text-5xl font-black uppercase leading-tight tracking-wide text-white md:mt-0 md:text-8xl xl:text-9xl">
-              Asclepius <br className="3xl:hidden block" />
-              <span className="3xl:inline hidden">&nbsp;</span>
+            <h1 className="fade-in-image z-10 mt-2 text-5xl font-black uppercase leading-tight tracking-wide text-white md:mt-0 md:text-8xl xl:text-9xl 3xl:!leading-snug">
+              Asclepius <br className="block 3xl:hidden" />
+              <span className="hidden 3xl:inline">&nbsp;</span>
               <span className="gradient-text animate-gradient font-black text-transparent">
                 2024
               </span>
             </h1>
             {/* Fade-in animation for this paragraph */}
-            <p className="fade-in-pathos 3xl:my-0 3xl:text-3xl z-10 mt-2 font-lexendDeca text-base font-light uppercase italic tracking-wide text-white md:my-10 md:mt-3 md:text-3xl md:tracking-widest">
+            <p className="fade-in-pathos z-10 mt-2 font-lexendDeca text-base font-light uppercase italic tracking-wide text-white md:my-10 md:mt-3 md:text-3xl md:tracking-widest 3xl:my-0 3xl:text-3xl">
               Pathos To Praxis
             </p>
           </div>
         </div>
       </div>
-      <div className="mt-16 flex flex-col items-center justify-center text-center text-xl font-medium text-white md:mt-12 md:text-3xl lg:text-4xl">
+      <div className="mt-16 flex flex-col items-center justify-center text-center text-xl font-medium text-white md:mt-12 md:text-3xl lg:mt-20">
         <p className="fly-in-tagline">
           7th International <br className="md:hidden" />
           UG Medical Conference

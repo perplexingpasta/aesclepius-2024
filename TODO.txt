@@ -43,10 +43,10 @@ events in md and lg view ✅
 added cursor followed by circle ✅
 improved hero section animations ✅
 rj page at top right ✅
-added gsap to org committee and footer
+added gsap to org committee and footer ✅
+- loading state (0 to 100%) ✅
 
 - some insane codegrid shit
 - figma circles
 - locomotive smooth scroll - sheriyans
-- loading state (0 to 100%)
 - page not found

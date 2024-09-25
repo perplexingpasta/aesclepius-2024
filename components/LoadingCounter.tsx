@@ -1,69 +1,158 @@
-// components/LoadingCounter.tsx
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { CustomEase } from "gsap/CustomEase";
+// "use client";
+// import { useEffect, useState } from "react";
+// import gsap from "gsap";
 
-gsap.registerPlugin(CustomEase);
+// interface LoadingCounterProps {
+//   onComplete?: () => void; // Make sure it's optional and a function
+// }
+
+// const LoadingCounter: React.FC<LoadingCounterProps> = ({ onComplete }) => {
+//   const [counter, setCounter] = useState(0);
+
+//   useEffect(() => {
+//     const startLoader = () => {
+//       let currentValue = 0;
+
+//       const updateCounter = () => {
+//         if (currentValue === 100) {
+//           return;
+//         }
+
+//         // Increment by a random value between 1 and 10
+//         const increment = Math.floor(Math.random() * 10) + 1;
+//         currentValue += increment;
+
+//         // Ensure currentValue does not exceed 100
+//         if (currentValue > 100) {
+//           currentValue = 100;
+//         }
+
+//         setCounter(currentValue);
+
+//         // Call updateCounter again after a delay
+//         const delay = Math.floor(Math.random() * 200) + 50;
+//         setTimeout(updateCounter, delay);
+//       };
+
+//       updateCounter();
+//     };
+
+//     startLoader();
+
+//     // GSAP animations with onComplete callback
+//     gsap.to(".counter", {
+//       delay: 3.5,
+//       opacity: 0,
+//       duration: 0.25,
+//       onComplete: () => {
+//         if (onComplete) {
+//           onComplete(); // Safely call onComplete if it exists
+//         }
+//       },
+//     });
+
+//     gsap.to(".bar", {
+//       delay: 3.5,
+//       height: 0,
+//       stagger: {
+//         amount: 0.5,
+//       },
+//       ease: "power4.inOut",
+//       duration: 1.5,
+//     });
+//   }, [onComplete]);
+//   return (
+//     <div className="fixed z-50 flex h-screen w-screen flex-col items-center justify-center overflow-hidden bg-transparent">
+//       <h1 className="counter fixed bottom-4 right-6 z-50 flex items-end justify-end text-[35vw] font-black tracking-widest text-white">
+//         {counter}
+//       </h1>
+
+//       <div className="overlay fixed z-10 flex h-screen w-screen">
+//         {[...Array(5)].map((_, index) => (
+//           <div key={index} className="bar h-full w-full bg-black-100"></div>
+//           // <div key={index} className="bar h-[15vh] w-[10vw] bg-black"></div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default LoadingCounter;
+
+// this one works but not bars
+"use client";
+import { useEffect, useState } from "react";
+import gsap from "gsap";
 
 interface LoadingCounterProps {
-  onComplete: () => void; // Callback when loading is complete
+  onComplete?: () => void; // Optional onComplete function
 }
 
 const LoadingCounter: React.FC<LoadingCounterProps> = ({ onComplete }) => {
-  const counterRef = useRef<HTMLParagraphElement>(null);
+  const [counter, setCounter] = useState(0);
 
   useEffect(() => {
-    CustomEase.create(
-      "hop",
-      "M0,0 C0.29,0 0.348,0.05 0.422,0.134 0.494,0.217 0.484,0.355 0.5,0.5 0.518,0.662 0.515,0.793 0.596,0.876 0.701,0.983 0.72,0.987 1,1",
-    );
+    let interval: number;
 
-    const animateCounter = () => {
+    const startLoader = () => {
       let currentValue = 0;
-      const updateInterval = 300;
-      const maxDuration = 2000;
-      const endValue = 100;
-      const startTime = Date.now();
 
-      const updateCounter = () => {
-        const elapsedTime = Date.now() - startTime;
-        if (elapsedTime < maxDuration && counterRef.current) {
-          currentValue = Math.min(
-            currentValue + Math.floor(Math.random() * 30) + 5,
-            endValue,
-          );
-          counterRef.current.textContent = currentValue.toString();
-          setTimeout(updateCounter, updateInterval);
-        } else if (counterRef.current) {
-          counterRef.current.textContent = endValue.toString();
-          setTimeout(() => {
-            gsap.to(counterRef.current, {
-              y: -20,
-              duration: 1,
-              ease: "power3.inOut",
-              onComplete: onComplete, // Notify when the animation is done
-            });
-          }, 500);
+      interval = window.setInterval(() => {
+        // Generate a random increment between 1 and 10 (you can adjust these values)
+        const randomIncrement = Math.floor(Math.random() * 10) + 1;
+        currentValue += randomIncrement;
+
+        // Ensure it does not exceed 100
+        if (currentValue >= 100) {
+          currentValue = 100;
+          setCounter(currentValue);
+          clearInterval(interval); // Stop the counter
+
+          // Trigger the GSAP animations after counter hits 100
+          gsap.to(".counter", {
+            opacity: 0,
+            duration: 0.25,
+            onComplete: () => {
+              if (onComplete) {
+                onComplete(); // Safely call onComplete if it exists
+              }
+            },
+          });
+
+          // Animate bars
+          gsap.to(".bar", {
+            height: 0,
+            stagger: {
+              amount: 0.5,
+            },
+            ease: "power4.inOut",
+            duration: 1.5,
+          });
         }
-      };
-      updateCounter();
+
+        setCounter(currentValue); // Update counter state
+      }, 100); // Update every 300ms for smoother progress
     };
 
-    gsap.to(counterRef.current, {
-      y: 0,
-      duration: 1,
-      ease: "power3.out",
-      delay: 1,
-      onComplete: animateCounter,
-    });
+    startLoader();
+
+    return () => {
+      // Cleanup interval if the component unmounts
+      clearInterval(interval);
+    };
   }, [onComplete]);
 
   return (
-    <div className="flex h-screen w-screen items-center justify-center overflow-hidden">
-      <div className="relative z-0 h-5 w-10 text-center">
-        <p ref={counterRef} className="relative block translate-y-5 transform">
-          0
-        </p>
+    <div className="fixed z-50 flex h-screen w-screen flex-col items-center justify-center overflow-hidden bg-black-100">
+      <h1 className="counter fixed bottom-4 right-6 z-50 flex items-end justify-end text-[35vw] font-black tracking-wider text-violet-500 md:text-[25vh] lg:right-12">
+        {counter}
+      </h1>
+
+      {/* Overlay with bars */}
+      <div className="fixed z-10 flex h-screen w-screen">
+        {[...Array(5)].map((_, index) => (
+          <div key={index} className="bar h-full w-full bg-black-100"></div>
+        ))}
       </div>
     </div>
   );
