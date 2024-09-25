@@ -13,9 +13,9 @@ const Contact = () => {
 
     gsap.fromTo(
       eventsRef.current,
-      { y: 50, opacity: 0 },
+      { opacity: 0 },
       {
-        y: 0,
+        // y: 0,
         opacity: 1,
         duration: 1,
         ease: "power3.out",
@@ -26,6 +26,21 @@ const Contact = () => {
         },
       },
     );
+    // gsap.fromTo(
+    //   eventsRef.current,
+    //   { y: 50, opacity: 0 },
+    //   {
+    //     y: 0,
+    //     opacity: 1,
+    //     duration: 1,
+    //     ease: "power3.out",
+    //     scrollTrigger: {
+    //       trigger: eventsRef.current,
+    //       start: "top 80%",
+    //       toggleActions: "play none none reset",
+    //     },
+    //   },
+    // );
   }, []);
 
   return (

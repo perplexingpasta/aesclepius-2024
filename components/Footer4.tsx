@@ -135,20 +135,20 @@ const Footer = () => {
       // Fly in subtitle
       .fromTo(
         subtitleRef.current,
-        { y: 50, opacity: 0 },
+        { y: 25, opacity: 0 },
         { y: 0, opacity: 1, duration: 1 },
         "-=0.5",
       )
       // Fly in conference info
       .fromTo(
         conferenceInfo1Ref.current,
-        { y: 50, opacity: 0 },
+        { y: 25, opacity: 0 },
         { y: 0, opacity: 1, duration: 1 },
         "-=0.5",
       )
       .fromTo(
         conferenceInfo2Ref.current,
-        { y: 50, opacity: 0 },
+        { y: 25, opacity: 0 },
         { y: 0, opacity: 1, duration: 1 },
         "-=1",
       )
