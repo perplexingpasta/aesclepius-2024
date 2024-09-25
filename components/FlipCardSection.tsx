@@ -66,21 +66,24 @@ const FlipCardSection = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     // Set initial opacity to 0
-    gsap.set(eventsRef.current, { opacity: 0 });
+    gsap.set(eventsRef.current, { opacity: 0, visibility: "hidden" });
 
-    gsap.to(eventsRef.current, { opacity: 1, duration: 1 });
     gsap.fromTo(
       eventsRef.current,
-      { y: 50, opacity: 0 },
+      { y: 50, opacity: 0, visibility: "hidden" }, // Start hidden
       {
         y: 0,
         opacity: 1,
+        visibility: "visible", // Make it visible when animating
         duration: 1,
         ease: "power3.out",
         scrollTrigger: {
           trigger: eventsRef.current,
           start: "top 80%",
           toggleActions: "play none none reset",
+          onEnter: () => gsap.set(eventsRef.current, { visibility: "visible" }), // Ensure visibility when entering
+          onLeaveBack: () =>
+            gsap.set(eventsRef.current, { visibility: "hidden" }), // Hide when scrolling back
         },
       },
     );
