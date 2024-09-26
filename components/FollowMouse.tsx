@@ -41,7 +41,7 @@ const FollowMouse: React.FC = () => {
   }, [mousePos, ballPos]);
 
   return (
-    <div className="3xl:block pointer-events-none fixed inset-0 z-50 hidden">
+    <div className="pointer-events-none fixed inset-0 z-50 hidden 3xl:block">
       <div
         ref={ballRef}
         className="pointer-events-none absolute h-10 w-10 rounded-full border-2 border-white dark:border-black"

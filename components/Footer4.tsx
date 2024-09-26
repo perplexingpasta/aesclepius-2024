@@ -191,9 +191,7 @@ const Footer = () => {
           </div>
 
           <div className="hidden flex-col justify-between lg:mb-0 lg:ml-20 lg:mt-0 lg:flex">
-            <h1 className="mb-2 text-xl lg:text-2xl">
-              organising committee
-            </h1>
+            <h1 className="mb-2 text-xl lg:text-2xl">organising committee</h1>
             {core.map(({ id, img, name, desig, number }) => (
               <div key={id}>
                 <ContactCard
@@ -221,7 +219,7 @@ const Footer = () => {
             ref={conferenceInfo2Ref}
             className="text-sm font-light hover:text-indigo-400 lg:text-base lg:font-normal"
           >
-            22 - 26th October
+            22nd - 26th October
           </p>
 
           <div
@@ -262,6 +260,10 @@ const Footer = () => {
               </a>
             </div>
           </div>
+
+          <p className="pt-4 text-sm opacity-75 lg:hidden lg:pt-0">
+            Asclepius &copy; 2024. All rights reserved.
+          </p>
         </div>
       </div>
     </div>

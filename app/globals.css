@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth; /* Applies to all browsers that support it */
+}
 
 @layer base {
   :root {
@@ -163,6 +166,7 @@
   background-clip: text;
   -webkit-background-clip: text; /* For Safari */
   color: transparent;
+  background: #6366f1; /* Fallback */
 }
 
 /* FROM NIKE */
@@ -217,6 +221,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; /* Ensure vertical stacking */
 }
 
 #error .content {
@@ -290,20 +295,6 @@
 } */
 
 /* FONTS CSS */
-@font-face {
-  font-family: "Outfit";
-  src: url("/fonts/Outfit-Variable.ttf") format("truetype");
-  font-weight: 100 200 300 400 500 600 700 800 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Lexend";
-  src: url("/fonts/Lexend-Variable.ttf") format("truetype");
-  font-weight: 100 200 300 400 500 600 700 800 900;
-  font-style: normal;
-}
-
 @font-face {
   font-family: "LexendDeca";
   src: url("/fonts/LexendDeca-Variable.ttf") format("truetype");

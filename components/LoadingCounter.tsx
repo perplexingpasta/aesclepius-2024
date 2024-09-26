@@ -130,8 +130,8 @@ const LoadingCounter: React.FC<LoadingCounterProps> = ({ onComplete }) => {
           });
         }
 
-        setCounter(currentValue); // Update counter state
-      }, 250); // Update every 300ms for smoother progress
+        setCounter(currentValue);
+      }, 150);
     };
 
     startLoader();

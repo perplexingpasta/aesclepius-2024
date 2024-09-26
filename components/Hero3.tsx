@@ -242,7 +242,7 @@ const Hero = () => {
           UG Medical Conference
         </p>
         <p className="fly-in-dates mt-2 text-purpledark lg:text-3xl">
-          22 - 26th October
+          22nd - 26th October
         </p>
         <div className="fade-in-scrollButton">
           <ScrollButton />
