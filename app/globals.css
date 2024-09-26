@@ -166,7 +166,6 @@ html {
   background-clip: text;
   -webkit-background-clip: text; /* For Safari */
   color: transparent;
-  background: #6366f1; /* Fallback */
 }
 
 /* FROM NIKE */
