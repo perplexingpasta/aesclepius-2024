@@ -62,7 +62,7 @@ const Page = () => {
           Developed by
         </div>
         <div className="fade-in-rj text-4xl font-extrabold tracking-widest text-white md:text-6xl xl:text-8xl">
-          rishabh
+          rj
         </div>
       </main>
     </div>

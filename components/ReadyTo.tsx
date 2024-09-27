@@ -199,7 +199,7 @@ const ReadyTo = () => {
         </Link>
         <Link
           ref={button2Ref}
-          href="https://drive.google.com/file/d/1bG0Eg7uHzgFAI3rvkRVzkiNBqOHvy5b1/view?usp=sharing"
+          href="https://drive.google.com/file/d/1SCgqsLojctoTDgMNybps5kr5_byaao6g/view?usp=sharing"
           target="_blank"
         >
           <LitUpButton

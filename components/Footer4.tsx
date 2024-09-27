@@ -119,6 +119,7 @@ const Footer = () => {
   const conferenceInfo1Ref = useRef(null);
   const conferenceInfo2Ref = useRef(null);
   const socialMediaRef = useRef(null);
+  const copyrightRef = useRef(null);
 
   useEffect(() => {
     // Create a GSAP timeline
@@ -155,6 +156,12 @@ const Footer = () => {
       // Fade in social media and email
       .fromTo(
         socialMediaRef.current,
+        { opacity: 0 },
+        { opacity: 1, duration: 1 },
+        "-=0.25",
+      )
+      .fromTo(
+        copyrightRef.current,
         { opacity: 0 },
         { opacity: 1, duration: 1 },
         "-=0.25",
@@ -261,7 +268,10 @@ const Footer = () => {
             </div>
           </div>
 
-          <p className="pt-4 text-sm opacity-75 lg:hidden lg:pt-0">
+          <p
+            className="pt-4 text-sm opacity-75 lg:hidden lg:pt-0"
+            ref={copyrightRef}
+          >
             Asclepius &copy; 2024. All rights reserved.
           </p>
         </div>

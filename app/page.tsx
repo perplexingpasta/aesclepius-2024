@@ -65,7 +65,7 @@ const DynamicContact = dynamic(() => import("@/components/Contact"), {
 const DynamicFooter = dynamic(() => import("@/components/Footer4"), {
   ssr: false,
 });
-const DynamicReadyTo = dynamic(() => import("../components/ReadyTo"), {
+const DynamicReadyTo = dynamic(() => import("../components/ReadyTo2"), {
   ssr: false,
 });
 
