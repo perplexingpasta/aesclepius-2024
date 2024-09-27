@@ -136,7 +136,7 @@ const Hero = () => {
         .fromTo(
           ".fly-in-jss",
           { y: 25, opacity: 0 },
-          { y: 0, opacity: 1, duration: 1.5, ease: "power3.out" },
+          { y: 0, opacity: 0.5, duration: 1.5, ease: "power3.out" },
           "-=1", // Overlap previous animation by 1.5 seconds
         )
         .fromTo(
@@ -219,7 +219,7 @@ const Hero = () => {
             </div>
 
             {/* Fly-in animation for this h1 */}
-            <h1 className="fly-in-jss z-10 -mb-2 pl-2 text-xs uppercase tracking-widest text-white opacity-75 md:mb-0 md:pl-6 md:text-lg lg:-mb-4 lg:pl-8 lg:text-lg">
+            <h1 className="fly-in-jss z-10 -mb-2 pl-2 text-xs uppercase tracking-widest text-white md:mb-0 md:pl-6 md:text-lg lg:-mb-4 lg:pl-8 lg:text-lg">
               JSS Medical College Presents
             </h1>
             <h1 className="fade-in-image z-10 mt-2 text-5xl font-black uppercase leading-tight tracking-wide text-white md:mt-0 md:text-8xl xl:text-9xl 3xl:!leading-snug">
@@ -236,7 +236,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="mt-16 flex flex-col items-center justify-center text-center text-xl font-medium text-white md:mt-12 md:text-3xl lg:mt-20">
+      <div className="mt-12 flex flex-col items-center justify-center text-center text-xl font-medium text-white md:text-3xl lg:mt-20">
         <p className="fly-in-tagline">
           7th International <br className="md:hidden" />
           UG Medical Conference

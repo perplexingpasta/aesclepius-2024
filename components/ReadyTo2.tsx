@@ -230,7 +230,9 @@ import { IoBook } from "react-icons/io5";
 import LitUpButton from "./ui/LitUpButton";
 import Link from "next/link";
 import LitUpButtonBg from "./ui/LitUpButtonBg";
+import LitUpButtonMini from "./ui/LitUpButtonMini";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { GoHomeFill } from "react-icons/go";
 import { IoPersonCircle } from "react-icons/io5";
 import { SiUnitednations } from "react-icons/si";
@@ -277,6 +279,54 @@ const ReadyTo = () => {
   };
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: readyToRef.current,
+        start: "top 80%",
+        toggleActions: "play none none reset",
+      },
+    });
+
+    tl.fromTo(
+      readyToRef.current,
+      { y: 50, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out",
+      },
+    )
+      .fromTo(
+        button1Ref.current,
+        { opacity: 0 },
+        {
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+        },
+        "0.75", // start this animation 0.75 seconds after the previous one ends
+      )
+      .fromTo(
+        button2Ref.current,
+        { opacity: 0 },
+        {
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+        },
+        "1.25", // start this animation 0.75 seconds after the previous one ends
+      );
+
+    // Clean up on component unmount
+    return () => {
+      tl.kill();
+    };
+  }, []);
+
+  useEffect(() => {
     if (isOverlayVisible) {
       const buttons = Array.from(buttonsRef.current?.children || []);
       // GSAP animation for buttons
@@ -296,7 +346,7 @@ const ReadyTo = () => {
               {
                 opacity: 0.5,
                 duration: 0.75,
-                delay: 0.25, 
+                delay: 0.25,
               },
             );
           },
@@ -307,7 +357,7 @@ const ReadyTo = () => {
 
   return (
     <div
-      className="my-36 flex flex-col items-center md:my-0 md:mb-40 lg:mb-40 lg:mt-52"
+      className="my-[35vh] flex flex-col items-center md:my-0 md:mb-40 lg:mb-40 lg:mt-52"
       id="readyto"
     >
       <h1
@@ -354,7 +404,7 @@ const ReadyTo = () => {
                 href="https://asclepius2024.azurewebsites.net/"
                 target="_blank"
               >
-                <LitUpButtonBg
+                <LitUpButtonMini
                   title="Homepage"
                   icon={<GoHomeFill />}
                   position="left"
@@ -364,7 +414,7 @@ const ReadyTo = () => {
                 href="https://jssuni.edu.in/jssaher/conference/ASCL2024/delegatereg.aspx?"
                 target="_blank"
               >
-                <LitUpButtonBg
+                <LitUpButtonMini
                   title="Delegate Registration"
                   icon={<IoPersonCircle />}
                   position="left"
@@ -374,7 +424,7 @@ const ReadyTo = () => {
                 href="https://jssuni.edu.in/jssaher/conference/ASCL2024/munreg.aspx"
                 target="_blank"
               >
-                <LitUpButtonBg
+                <LitUpButtonMini
                   title="MUN Registration"
                   icon={<SiUnitednations />}
                   position="left"
@@ -384,7 +434,7 @@ const ReadyTo = () => {
                 href="https://jssuni.edu.in/jssaher/conference/ASCL2024/quizreg.aspx"
                 target="_blank"
               >
-                <LitUpButtonBg
+                <LitUpButtonMini
                   title="Quiz Registration"
                   icon={<FaQuestionCircle />}
                   position="left"
@@ -394,7 +444,7 @@ const ReadyTo = () => {
                 href="https://drive.google.com/file/d/1SCgqsLojctoTDgMNybps5kr5_byaao6g/view?usp=sharing"
                 target="_blank"
               >
-                <LitUpButtonBg
+                <LitUpButtonMini
                   title="View Brochure"
                   icon={<IoBook />}
                   position="left"
@@ -403,7 +453,7 @@ const ReadyTo = () => {
             </div>
             <div
               ref={noteRef}
-              className="notediv opacity-0 mt-10 max-w-[75vw] items-start justify-start font-lexendDeca text-sm font-light text-white md:mt-16 md:max-w-[65vw] md:text-base"
+              className="notediv mt-10 max-w-[75vw] items-start justify-start font-lexendDeca text-sm font-light text-white opacity-0 md:mt-16 md:max-w-[65vw] md:text-base"
             >
               <p>&bull; Visit the official homepage to learn more.</p>
               <br />

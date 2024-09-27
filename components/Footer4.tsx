@@ -127,7 +127,8 @@ const Footer = () => {
       scrollTrigger: {
         trigger: titleRef.current,
         start: "top 90%",
-        toggleActions: "play reverse restart reset", // Update toggleActions here
+        // toggleActions: "play reverse restart reset", // Update toggleActions here
+        toggleActions: "play none none reset", // Update toggleActions here
       },
     });
 
@@ -163,7 +164,7 @@ const Footer = () => {
       .fromTo(
         copyrightRef.current,
         { opacity: 0 },
-        { opacity: 1, duration: 1 },
+        { opacity: 0.5, duration: 1 },
         "-=0.25",
       );
   }, []);
@@ -269,7 +270,7 @@ const Footer = () => {
           </div>
 
           <p
-            className="pt-4 text-sm opacity-75 lg:hidden lg:pt-0"
+            className="pt-4 text-sm lg:hidden lg:pt-0"
             ref={copyrightRef}
           >
             Asclepius &copy; 2024. All rights reserved.
