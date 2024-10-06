@@ -1,18 +1,3 @@
-// import React from "react";
-
-// const page = () => {
-//   return (
-//     <div className="overflow-clip bg-black-100">
-//       <main className="relative top-1/2 flex flex-col items-center justify-center text-center text-5xl text-white">
-//       <div className="font-extralight lowercase">Developed by</div>
-//       <div className="font-extrabold tracking-widest">rishabh</div>
-//     </main>
-//     </div>
-//   );
-// };
-
-// export default page;
-
 "use client";
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
